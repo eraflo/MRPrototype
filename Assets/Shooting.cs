@@ -9,8 +9,8 @@ public class Shooting : MonoBehaviour
 
     private void Start()
     {
-        lineRenderer.startWidth = 0.05f;
-        lineRenderer.endWidth = 0.05f;
+        lineRenderer.startWidth = 0.01f;
+        lineRenderer.endWidth = 0.01f;
     }
     
     private void Update()
