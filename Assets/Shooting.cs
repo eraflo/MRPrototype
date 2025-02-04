@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class SpawnBall : MonoBehaviour
+public class Shooting : MonoBehaviour
 {
-    [SerializeField] private GameObject ballPrefab;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private int spawnSpeed = 10;
     
     private void Update()
@@ -12,7 +13,7 @@ public class SpawnBall : MonoBehaviour
             return;
         }
         
-        var obj = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        var obj = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
         var rb = obj.GetComponent<Rigidbody>();
         rb.velocity = transform.forward * spawnSpeed;
     }
