@@ -683,11 +683,11 @@ PrefabInstance:
     - target: {fileID: 747806495401477012, guid: c813208e672e3074bbe118e1a9ee94fd, type: 3}
       propertyPath: PlanePrefab
       value: 
-      objectReference: {fileID: 102490448831091297, guid: 3ecf103c2a191704eb3046d6765665ed, type: 3}
+      objectReference: {fileID: 102490448831091297, guid: 54ff6b827fcabcf498fd3795b6bfbd8b, type: 3}
     - target: {fileID: 747806495401477012, guid: c813208e672e3074bbe118e1a9ee94fd, type: 3}
       propertyPath: VolumePrefab
       value: 
-      objectReference: {fileID: 8013016026686888416, guid: 891349029806e4144812ff2d304d9cf9, type: 3}
+      objectReference: {fileID: 8013016026686888416, guid: 0d8051c617af5f7438a0a89e1d08f7cc, type: 3}
     - target: {fileID: 747806495401477014, guid: c813208e672e3074bbe118e1a9ee94fd, type: 3}
       propertyPath: m_Name
       value: OVRSceneManager
