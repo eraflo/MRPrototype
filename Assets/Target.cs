@@ -1,8 +1,20 @@
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Target : MonoBehaviour
 {
+    [SerializeField] private Transform playerPosition;
     [SerializeField] private float movePosition = 10f;
+
+    private void Start()
+    {
+        Move();
+    }
+
+    private void Update()
+    {
+        transform.LookAt(playerPosition);
+    }
     
     private void OnTriggerEnter(Collider other)
     {
@@ -21,9 +33,9 @@ public class Target : MonoBehaviour
         var newPosition = new Vector3(
             Random.Range(-movePosition, movePosition),
             transform.position.y,
-            transform.position.z
+            Random.Range(-movePosition, movePosition)
         );
         
-        transform.position = newPosition;
+        transform.position = playerPosition.position + newPosition;
     }
 }

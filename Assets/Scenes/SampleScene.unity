@@ -839,6 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b35b084014d5ec4187a059907345eb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPosition: {fileID: 1755443080}
   movePosition: 50
 --- !u!65 &1559576677
 BoxCollider:
@@ -1031,6 +1032,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
   m_PrefabInstance: {fileID: 1613076675}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1755443080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 758165065}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2009309582
 GameObject:
