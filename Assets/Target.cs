@@ -5,6 +5,7 @@ public class Target : MonoBehaviour
 {
     [SerializeField] private Transform playerPosition;
     [SerializeField] private float movePosition = 10f;
+    [SerializeField] private AudioSource hitSound;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class Target : MonoBehaviour
         Debug.Log("Bullet hit target!");
         Destroy(other.gameObject);
         Move();
+        hitSound.Play();
     }
 
     private void Move()
